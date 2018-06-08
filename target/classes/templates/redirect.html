@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Simple Short Link Form</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="redirectUrl" style="visibility: hidden;"><p th:text="${page}" /></div>
+
+	<div class="container">
+		<form id="contact" action="" method="post">
+			<h3>Demo Form</h3>
+			<h4>You will be redirected ...</h4>
+		</form>
+	</div>
+
+</body>
+
+</html>
+<script>
+$(document).ready(function(){
+	location.href = $('div#redirectUrl').text();
+});
+</script>

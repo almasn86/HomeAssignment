@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Simple Short Link Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<form id="contact" action="/add" method="post">
+			<h3>Demo Form</h3>
+			<h4>Please, fill the following form for short URL</h4>
+			<fieldset>
+				<input placeholder="Full URL" name="fullUrl" type="url" tabindex="1" required
+					autofocus>
+			</fieldset>
+			<fieldset>
+				<textarea name="description" placeholder="Type your description here...." tabindex="2"></textarea>
+			</fieldset>
+			<fieldset>
+				<button name="submit" type="submit" id="form-submit"
+					data-submit="...Sending">Submit</button>
+			</fieldset>
+		</form>
+	</div>
+
+</body>
+
+</html>
